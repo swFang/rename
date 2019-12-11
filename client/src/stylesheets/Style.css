@@ -1,7 +1,12 @@
 .displayPicture {
-    color: #36494E;
+    color: #eeeeee;
     height: 250px;
-    background-color: #e5e1ee;
+    width: 250px;
+    background-color: #393e46;
+    font-family: 'Lilita One';
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
 }
 
 .SiteContainer {
@@ -15,20 +20,41 @@
 .SideBar {
     height: 100vh;
     width: 250px;
-    background-color: #c9e4e7;
+    font-family: 'Lilita One';
+    font-size: 30px;
 }
 
 .topicArea {
     color: #36494E;
+    height: calc(100% - 250px);
+    background-color: #00adb5;
+}
+
+.terminalBar {
+    height: 2rem; 
+    background-color: #36494E;
 }
 
 .terminalView {
     flex-grow: 2;
-    color: #04e824;
+    color: #eeeeee;
+    height: calc(100% - 2rem);
+    background-color: #222831;
+    font-family: 'Dosis';
+    font-size: 20px;
+}
+
+.terminal {
+    width: calc(100% - 250px);
     height: 100vh;
-    background-color: black;
-    margin: 8px;
-    margin-top: 2rem;
+}
+
+.displayPicture .circularPicture {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
 }
 
 body {

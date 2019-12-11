@@ -34,7 +34,10 @@ state = {
 				<DisplayPicture></DisplayPicture>
 				<TopicArea></TopicArea>
 			</div>
-			<TerminalView></TerminalView>
+			<div className="terminal">
+				<div className = "terminalBar"/>
+				<TerminalView></TerminalView>
+			</div>
 		</div>
 		);
 	}
