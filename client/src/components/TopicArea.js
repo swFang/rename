@@ -2,22 +2,30 @@ import React, { Component } from 'react';
 
 class TopicArea extends Component {
 
+    consructor() {
+        this.state = {
+            topics: []
+        };
+    }
+
     async getTopics() {
         const res = await fetch('/getTopics')
         const body = res.json()
             .then(data => {
-                console.log(data);
+                return data;
             });
 
         if(res.status !== 200) {
             throw Error(body.message)
         }
-
-        console.log(body);
     }
 
     componentDidMount() {
-        this.getTopics();
+        this.getTopics().then (
+            (data) => {
+                this.setState({topics: data});
+            }
+        );
     }
 
     render() {

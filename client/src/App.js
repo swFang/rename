@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import DisplayPicture from './components/DisplayPicture';
 import TopicArea from './components/TopicArea';
 import TerminalView from './components/TerminalView';
+import SemanticSidebar from './components/SemanticSideBar';
+import SidebarExampleSidebar from './components/test.js';
 import './stylesheets/Style.css';
 
 class App extends Component {
@@ -30,10 +32,11 @@ state = {
 	render() {	
 		return (
 		<div className="SiteContainer">
-			<div className = "SideBar">
+			<SemanticSidebar/>
+			{/* <div className = "SideBar">
 				<DisplayPicture></DisplayPicture>
 				<TopicArea></TopicArea>
-			</div>
+			</div> */}
 			<div className="terminal">
 				<div className = "terminalBar"/>
 				<TerminalView></TerminalView>

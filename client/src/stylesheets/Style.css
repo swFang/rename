@@ -1,12 +1,22 @@
 .displayPicture {
     color: #eeeeee;
-    height: 250px;
-    width: 250px;
+    height: 250px !important;
+    width: 260px !important;
     background-color: #393e46;
     font-family: 'Lilita One';
     font-size: 30px;
     align-content: center;
     text-align: center;
+}
+
+.ui.vertical.ui.push.left.visible.sidebar.menu {
+    background-color: #00adb5 !important;
+}
+
+.displayPicture img {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
 
 .SiteContainer {
@@ -45,7 +55,8 @@
 }
 
 .terminal {
-    width: calc(100% - 250px);
+    margin-left: 260px;
+    width: calc(100% - 260px);
     height: 100vh;
 }
 
