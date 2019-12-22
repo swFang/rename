@@ -24,6 +24,11 @@ export default class SemanticSidebar extends Component {
         }
     }
 
+    handleItemClick(element) {
+        console.log('clicked ', element);
+        this.props.updateSelectedTab(element);
+    }
+
     componentDidMount() {
         this.getTopics(); 
     }
@@ -31,7 +36,11 @@ export default class SemanticSidebar extends Component {
     renderTopics() {
         return (
             this.state.topics.map((element) => {
-                return <Menu.Item as='a'> {element} </Menu.Item>
+                return (
+                    <Menu.Item as='a'  
+                    onClick={() => {this.handleItemClick(element)}} > 
+                        {element}
+                    </Menu.Item>)
             })
         );
     }

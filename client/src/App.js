@@ -8,9 +8,16 @@ import SidebarExampleSidebar from './components/test.js';
 import './stylesheets/Style.css';
 
 class App extends Component {
-state = {
-	data: null
-};
+	state = {
+		data: null,
+		selectedTab: "Default landing Page"
+	};
+
+
+
+	updateSelectedTab(input) {
+		this.setState({selectedTab: input});	
+	}
 
 	componentDidMount() {
 		// Call our fetch function below once the component mounts
@@ -32,14 +39,14 @@ state = {
 	render() {	
 		return (
 		<div className="SiteContainer">
-			<SemanticSidebar/>
+			<SemanticSidebar updateSelectedTab={this.updateSelectedTab.bind(this)} />
 			{/* <div className = "SideBar">
 				<DisplayPicture></DisplayPicture>
 				<TopicArea></TopicArea>
 			</div> */}
 			<div className="terminal">
 				<div className = "terminalBar"/>
-				<TerminalView></TerminalView>
+				<TerminalView selectedTab={this.state.selectedTab}> </TerminalView>
 			</div>
 		</div>
 		);
