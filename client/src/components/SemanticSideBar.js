@@ -38,7 +38,8 @@ export default class SemanticSidebar extends Component {
             this.state.topics.map((element) => {
                 return (
                     <Menu.Item as='a'  
-                    onClick={() => {this.handleItemClick(element)}} > 
+                    onClick={() => {this.handleItemClick(element)}}
+                    key={element}> 
                         {element}
                     </Menu.Item>)
             })

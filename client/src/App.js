@@ -4,19 +4,16 @@ import DisplayPicture from './components/DisplayPicture';
 import TopicArea from './components/TopicArea';
 import TerminalView from './components/TerminalView';
 import SemanticSidebar from './components/SemanticSideBar';
-import SidebarExampleSidebar from './components/test.js';
 import './stylesheets/Style.css';
 
 class App extends Component {
 	state = {
 		data: null,
-		selectedTab: "Default landing Page"
+		Topic : "Default landing Page"
 	};
 
-
-
 	updateSelectedTab(input) {
-		this.setState({selectedTab: input});	
+		this.setState({Topic: input});	
 	}
 
 	componentDidMount() {
@@ -40,13 +37,9 @@ class App extends Component {
 		return (
 		<div className="SiteContainer">
 			<SemanticSidebar updateSelectedTab={this.updateSelectedTab.bind(this)} />
-			{/* <div className = "SideBar">
-				<DisplayPicture></DisplayPicture>
-				<TopicArea></TopicArea>
-			</div> */}
 			<div className="terminal">
-				<div className = "terminalBar"/>
-				<TerminalView selectedTab={this.state.selectedTab}> </TerminalView>
+				<div className = "terminalBar"> Terminal </div>
+				<TerminalView Topic={this.state.Topic}> </TerminalView>
 			</div>
 		</div>
 		);

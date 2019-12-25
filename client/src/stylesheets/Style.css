@@ -43,6 +43,10 @@
 .terminalBar {
     height: 2rem; 
     background-color: #36494E;
+    color: #eeeeee;
+    font-family: 'Dosis';
+    font-size: 15px;
+    line-height: 2;
 }
 
 .terminalView {
@@ -66,6 +70,10 @@
     border-radius: 50%;
     background-color: white;
     display: inline-block;
+}
+
+.WIP {
+    text-align: center;
 }
 
 body {
