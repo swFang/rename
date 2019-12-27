@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import WorkInProgress from './WorkInProgress';
+import About from './About';
 class TerminalView extends Component {
 
     constructor(props) {
@@ -10,7 +11,7 @@ class TerminalView extends Component {
     selectComponentToRender() {
         switch (this.props.Topic) {
             case 'About' :
-                return <WorkInProgress />;
+                return <About />;
             case 'Projects' :
                 return <WorkInProgress />;
             case 'Resume' :

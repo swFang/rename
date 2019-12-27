@@ -2,7 +2,6 @@
     color: #eeeeee;
     height: 250px !important;
     width: 260px !important;
-    background-color: #393e46;
     font-family: 'Lilita One';
     font-size: 30px;
     align-content: center;
@@ -10,13 +9,7 @@
 }
 
 .ui.vertical.ui.push.left.visible.sidebar.menu {
-    background-color: #00adb5 !important;
-}
-
-.displayPicture img {
-    height: 100%;
-    width: 100%;
-    display: block;
+    background-color: #4ECDC4 !important;
 }
 
 .SiteContainer {
@@ -37,46 +30,59 @@
 .topicArea {
     color: #36494E;
     height: calc(100% - 250px);
-    background-color: #00adb5;
+    background-color: #4ECDC4;
 }
 
 .terminalBar {
     height: 2rem; 
-    background-color: #36494E;
-    color: #eeeeee;
+    background-color: #f7fff7;
+    color: #1A535C;
     font-family: 'Dosis';
     font-size: 15px;
+    font-weight: bold;
     line-height: 2;
 }
 
 .terminalView {
     flex-grow: 2;
     color: #eeeeee;
-    height: calc(100% - 2rem);
-    background-color: #222831;
+    top: 2rem;
+    background-color: #1A535C;
     font-family: 'Dosis';
     font-size: 20px;
+    height: 100%;
 }
 
 .terminal {
     margin-left: 260px;
     width: calc(100% - 260px);
-    height: 100vh;
-}
-
-.displayPicture .circularPicture {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background-color: white;
-    display: inline-block;
 }
 
 .WIP {
     text-align: center;
+    padding-top: 5%;
+    background-color: #1A535C;
 }
 
 body {
     margin: 0px;
     padding: 0px;
+}
+
+.sidebarPic { 
+    margin: auto;
+    top: 8%;
+}
+
+p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+strong {
+    color: #FF6B6B;
+}
+
+h1 {
+    color: #FF6B6B;
 }

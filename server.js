@@ -4,12 +4,8 @@ const port = process.env.PORT || 5000;
 
 const topics = require('./server/datasheets/topics.json');
 
-// console.log that your server is up and running
-app.listen(port, () => console.log(`Listening on port ${port}`));
-
-// create a GET route
-app.get('/express_backend', (req, res) => {
-  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+app.get('/about', (req,res) => {
+  res.send({})
 });
 
 app.get('/getTopics', (req,res) => {
@@ -19,4 +15,8 @@ app.get('/getTopics', (req,res) => {
   } else {
     throw new Error('could not retrieve topics');
   }
-})
+});
+
+// console.log that your server is up and running
+app.listen(port, () => console.log(`Listening on port ${port}`));
+
