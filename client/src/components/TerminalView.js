@@ -35,7 +35,9 @@ class TerminalView extends Component {
     render() {
         return ( 
             <div className = 'terminalView'> 
+                <Introduction></Introduction>
                 <About></About>
+                <Timeline></Timeline>
                 <FunkyProjects></FunkyProjects>
                 <FunFacts></FunFacts>
                 <Links></Links>
