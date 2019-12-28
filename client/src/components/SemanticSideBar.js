@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 import DisplayPicture from './DisplayPicture';
-import { Sidebar, Menu, Header } from "semantic-ui-react";
+import { Sidebar, Menu } from "semantic-ui-react";
 
 export default class SemanticSidebar extends Component {
     constructor(props) {

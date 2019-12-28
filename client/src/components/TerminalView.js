@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import WorkInProgress from './WorkInProgress';
+import FunFacts from './FunFacts';
+import FunkyProjects from './FunkyProjects';
+import Introduction from './Introduction';
+import Links from './Links';
+import Timeline from './Timeline';
 import About from './About';
 class TerminalView extends Component {
 
@@ -10,15 +15,17 @@ class TerminalView extends Component {
 
     selectComponentToRender() {
         switch (this.props.Topic) {
+            case 'Introduction' :
+                return <WorkInProgress />;
             case 'About' :
                 return <About />;
-            case 'Projects' :
+            case 'Timeline' :
                 return <WorkInProgress />;
-            case 'Resume' :
+            case 'Funky Projects' :
                 return <WorkInProgress />;
-            case 'Artwork' :
+            case 'Fun Facts' :
                 return <WorkInProgress />;
-            case 'Travel Blog' :
+            case 'Github, Linkedin... etc' :
                 return <WorkInProgress />;
             default :
                 return 'Landing Page';
@@ -27,7 +34,12 @@ class TerminalView extends Component {
 
     render() {
         return ( 
-            <div className = 'terminalView'> {this.selectComponentToRender()} </div>
+            <div className = 'terminalView'> 
+                <About></About>
+                <FunkyProjects></FunkyProjects>
+                <FunFacts></FunFacts>
+                <Links></Links>
+            </div>
         );
     }
 }

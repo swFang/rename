@@ -4,12 +4,13 @@
     width: 260px !important;
     font-family: 'Lilita One';
     font-size: 30px;
+    background-color: #e3fdfd;
     align-content: center;
     text-align: center;
 }
 
 .ui.vertical.ui.push.left.visible.sidebar.menu {
-    background-color: #4ECDC4 !important;
+    background-color: #457B9D  !important;
 }
 
 .SiteContainer {
@@ -45,12 +46,11 @@
 
 .terminalView {
     flex-grow: 2;
-    color: #eeeeee;
+    color: #D9F7FA;
     top: 2rem;
-    background-color: #1A535C;
+    background-color: #2c3258;
     font-family: 'Dosis';
     font-size: 20px;
-    height: 100%;
 }
 
 .terminal {
@@ -60,8 +60,12 @@
 
 .WIP {
     text-align: center;
+}
+
+.About {
     padding-top: 5%;
-    background-color: #1A535C;
+    text-align: center;
+    padding-bottom: 5%;
 }
 
 body {
@@ -80,9 +84,13 @@ p {
 }
 
 strong {
-    color: #FF6B6B;
+    color: #CFD7C7;
 }
 
 h1 {
-    color: #FF6B6B;
+    color: #CFD7C7;
+}
+
+a.item {
+    color: #ffffff !important;
 }

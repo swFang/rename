@@ -6,7 +6,7 @@ import { Image } from 'semantic-ui-react'
 class About extends Component {
     render() {
         return (
-            <div className='WIP'>
+            <div className='About'>
                 <h1> Welcome to my humble abode.</h1>
                 <p className='firstPara'>
                     If you're on this site, that probably means {'      '}

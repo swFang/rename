@@ -1,7 +1,5 @@
 
 import React, { Component } from 'react';
-import DisplayPicture from './components/DisplayPicture';
-import TopicArea from './components/TopicArea';
 import TerminalView from './components/TerminalView';
 import SemanticSidebar from './components/SemanticSideBar';
 import './stylesheets/Style.css';
@@ -38,7 +36,6 @@ class App extends Component {
 		<div className="SiteContainer">
 			<SemanticSidebar updateSelectedTab={this.updateSelectedTab.bind(this)} />
 			<div className="terminal">
-				<div className = "terminalBar"> Terminal </div>
 				<TerminalView Topic={this.state.Topic}> </TerminalView>
 			</div>
 		</div>
