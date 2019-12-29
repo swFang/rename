@@ -28,22 +28,6 @@
     font-size: 30px;
 }
 
-.topicArea {
-    color: #36494E;
-    height: calc(100% - 250px);
-    background-color: #4ECDC4;
-}
-
-.terminalBar {
-    height: 2rem; 
-    background-color: #f7fff7;
-    color: #1A535C;
-    font-family: 'Dosis';
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 2;
-}
-
 .terminalView {
     flex-grow: 2;
     color: #D9F7FA;
@@ -68,6 +52,27 @@
     padding-bottom: 5%;
 }
 
+.vertical-timeline-element-content-arrow {
+    border-right-color: #457B9D;
+}
+
+.vertical-timeline-element-content {
+    background-color: #457B9D;
+}
+
+.vertical-timeline::before {
+    display: none;
+}
+
+.vertical-timeline-element-icon.bounce-in{
+    background-color: #D9F7FA;
+}
+
+.timelinePic {
+    width: 100%;
+    height: auto;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -87,8 +92,13 @@ strong {
     color: #CFD7C7;
 }
 
+h2 {
+    color: #CFD7C7;
+}
+
 h1 {
     color: #CFD7C7;
+    text-align: center;
 }
 
 a.item {

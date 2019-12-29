@@ -7,7 +7,8 @@ class About extends Component {
     render() {
         return (
             <div className='About'>
-                <h1> Welcome to my humble abode.</h1>
+                <h1> About Myself </h1>
+                <h2> Welcome to my humble abode.</h2>
                 <p className='firstPara'>
                     If you're on this site, that probably means {'      '}
                     you identify in one of the following categories: You're a recruiter that's hiring,
@@ -25,7 +26,7 @@ class About extends Component {
                 <br/>
                 <Image src={Placeholder} size='tiny' centered />
                 <br/>
-                <h1> Givin' the people what they want...</h1>
+                <h2> Givin' the people what they want...</h2>
                 <p>
                     Regardless of why you've decided to visit my site and read about me, I guess you 
                     have to give people what the came for, so here goes. As of today (2019-12-26), I am
@@ -62,7 +63,6 @@ class About extends Component {
                     Oh, and I also like volleyball, ultimate, anime, kdramas, tv shows, gaming (it's what got
                     me into this whole cs thing)... and the list goes on. :)    
                 </p>
-
             </div>
         );
     }
