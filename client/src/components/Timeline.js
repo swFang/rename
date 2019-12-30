@@ -11,9 +11,9 @@ class Timeline extends Component {
         return (
             <div className='Section-Timeline'> 
             <h1> So How'd I get here? </h1>
-                <VerticalTimeline className='VerticalTimeline'>
+                <VerticalTimeline className='VerticalTimeline' layout='1-column'>
                     <VerticalTimelineElement 
-                        date='2019/09/01 - 2020/04/01'
+                        date='2019/09/01 - 2020/06/01'
                         icon={<img src={phone} class="svg" width="30px" height="30px"/>}
                         iconStyle={{ height:"40px", width:"40px", paddingLeft:"5px", paddingTop:"6px"}} >
                             <h3 className="vertical-timeline-element-title"> SAP Agile Developer Mobile Team Intern </h3>
