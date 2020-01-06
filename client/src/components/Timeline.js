@@ -7,14 +7,23 @@ import book from '../book.svg';
 import phone from '../phone.svg';
 
 class Timeline extends Component {
+    constructor(props) {
+        super(props);
+        this.myRef = React.createRef();
+    }
+
+    componentDidMount() {
+        this.props.setRef('FunkyProjects', this.myRef);
+    }
+
     render() {
         return (
-            <div className='Section-Timeline'> 
+            <div className='Section-Timeline' ref={this.myRef} > 
             <h1> So How'd I get here? </h1>
                 <VerticalTimeline className='VerticalTimeline' layout='1-column'>
                     <VerticalTimelineElement 
                         date='2019/09/01 - 2020/06/01'
-                        icon={<img src={phone} class="svg" width="30px" height="30px"/>}
+                        icon={<img src={phone} width="30px" height="30px"/>}
                         iconStyle={{ height:"40px", width:"40px", paddingLeft:"5px", paddingTop:"6px"}} >
                             <h3 className="vertical-timeline-element-title"> SAP Agile Developer Mobile Team Intern </h3>
                             <h4 className="vertical-timeline-element-subtitle">Vancouver, BC</h4>
@@ -28,7 +37,7 @@ class Timeline extends Component {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement 
                         date='2016/09/01 - 2022/06/01'
-                        icon={<img src={book} class="svg" width="30px" height="30px"/>}
+                        icon={<img src={book}  width="30px" height="30px"/>}
                         iconStyle={{ height:"40px", width:"40px", paddingLeft:"6px", paddingTop:"6px"}} >
                             <h3 className="vertical-timeline-element-title"> University of British Columbia Bachelors of Science in Computer Science</h3>
                             <h4 className="vertical-timeline-element-subtitle">Vancouver, BC</h4>

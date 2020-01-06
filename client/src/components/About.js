@@ -4,9 +4,13 @@ import { Image } from 'semantic-ui-react'
 // import about from '../Test-About.html';
 
 class About extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
-            <div className='About'>
+            <div className='About' ref={this.props.setRef}>
                 <h1> About Myself </h1>
                 <h2> Welcome to my humble abode.</h2>
                 <p className='firstPara'>

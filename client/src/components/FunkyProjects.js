@@ -5,14 +5,24 @@ import book from '../book.svg';
 import phone from '../phone.svg';
 
 class FunkyProjects extends Component {
+    constructor(props) {
+        super(props);
+        this.myRef = React.createRef();
+    }
+
+    componentDidMount() {
+        this.props.setRef('FunkyProjects', this.myRef);
+        console.log(this.myRef);
+    }
+
     render() {
         return (
-            <div className='Section-Timeline'> 
+            <div className='Section-Timeline' ref={this.myRef}> 
             <h1> You want to hear about some funky projects? </h1>
                 <VerticalTimeline className='VerticalTimeline' layout='2-columns'>
                     <VerticalTimelineElement 
                         date='2018-01-01 - 2019-10-06'
-                        icon={<img src={phone} class="svg" width="30px" height="30px"/>}
+                        icon={<img src={phone} width="30px" height="30px"/>}
                         iconStyle={{ height:"40px", width:"40px", paddingLeft:"5px", paddingTop:"6px"}} >
                             <h3 className="vertical-timeline-element-title"> Emaily </h3>
                             <p>
@@ -22,7 +32,7 @@ class FunkyProjects extends Component {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement 
                         date='2019-01-19 - 2019-03-23'
-                        icon={<img src={book} class="svg" width="30px" height="30px"/>}
+                        icon={<img src={book} width="30px" height="30px"/>}
                         iconStyle={{ height:"40px", width:"40px", paddingLeft:"6px", paddingTop:"6px"}} >
                             <h3 className="vertical-timeline-element-title"> BrawlStars 2 </h3>
                             <p>
@@ -32,7 +42,7 @@ class FunkyProjects extends Component {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement 
                         date='Totally forgot the time since this wasnt on Github'
-                        icon={<img src={book} class="svg" width="30px" height="30px"/>}
+                        icon={<img src={book} width="30px" height="30px"/>}
                         iconStyle={{ height:"40px", width:"40px", paddingLeft:"6px", paddingTop:"6px"}} >
                             <h3 className="vertical-timeline-element-title"> Raspberry Pi Smart Mirror </h3>
                             <p>

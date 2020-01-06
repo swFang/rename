@@ -38,8 +38,9 @@
 }
 
 .terminal {
-    margin-left: 260px;
-    width: calc(100% - 260px);
+    margin-left: 258px;
+    width: calc(100% - 258px);
+    height: 1000px;
 }
 
 .WIP {
@@ -73,6 +74,17 @@
     height: auto;
 }
 
+.ui.vertical.ui.push.left.visible.sidebar.menu {
+    margin: 0px !important;
+    margin-top: auto !important;
+    overflow: hidden !important;
+}
+
+.linkIcons {
+    position: absolute;
+    bottom: 0;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -103,4 +115,8 @@ h1 {
 
 a.item {
     color: #ffffff !important;
+}
+
+.linkIcons {
+    margin-bottom: 10px;
 }

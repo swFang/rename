@@ -1,6 +1,8 @@
 import React, { Component } from 'react'; 
 import DisplayPicture from './DisplayPicture';
-import { Sidebar, Menu } from "semantic-ui-react";
+import {  Sidebar, Menu } from "semantic-ui-react";
+import Links from './Links';
+import scrollToComponent from 'react-scroll-to-component';
 
 export default class SemanticSidebar extends Component {
     constructor(props) {
@@ -25,8 +27,8 @@ export default class SemanticSidebar extends Component {
     }
 
     handleItemClick(element) {
-        console.log('clicked ', element);
-        this.props.updateSelectedTab(element);
+        console.log(element);
+        this.props.scrollToElement('FunkyProjects');
     }
 
     componentDidMount() {
@@ -56,6 +58,7 @@ export default class SemanticSidebar extends Component {
             >
             <DisplayPicture/>
             {this.renderTopics()}
+            <Links/>
             </Sidebar>
         )
     }

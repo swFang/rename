@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Grid, Image, Container } from 'semantic-ui-react';
 
 class FunFacts extends Component {
+    constructor(props) {
+        super(props);
+    }
+    
     render() {
         return (
             <div>
